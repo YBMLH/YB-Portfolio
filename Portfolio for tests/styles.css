@@ -53,6 +53,7 @@
     position: sticky;
     top: 0;
     background-color: #ffffff;
+    box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.62);
     
   }
   
@@ -190,11 +191,9 @@
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    display: none; /* Initially hidden */
-    width: 100vw;
+    display: none;
     text-align: center;
-    
-    
+    width: 100%;
   }
 
   
@@ -218,10 +217,8 @@
     background-color: #e2dcdc;
     color:#ee0e0e;
   }
+
 /**/
-
-
- 
   .column {
    float: left;
     width: 50%;
@@ -236,6 +233,7 @@
   }
   #contact-info{
     background-color: #ffffff;
+    padding: 10px
   }
   #email-section {
     background-color: #ffffff;
@@ -250,6 +248,13 @@
       width: 100%;
     }
   }
+  /* all the resume css*/
+  #container-resume{
+    text-align: center;
+    background-color:#9e9b9b;
+    color:#202020;
+    
+  }
   /*for the email form */
   .con-h {
     text-align: center;
@@ -258,6 +263,8 @@
   .con-p {
     text-align: center;
     padding: 10px ;
+    font-size:large;
+    font-family:Arial, Helvetica, sans-serif;
   }
   .message {
     height: 75px;
@@ -303,7 +310,20 @@
   }
   .info-p {
     color:#202020;
-    padding: 20px;
+    padding: 20px 40px;
+    font-size:large;
+    font-family:Arial, Helvetica, sans-serif;
     
-
+   
   }
+  .socials {
+    display: flex;
+    padding: 40px 25px;
+    justify-content: center;
+    
+  }
+  .socials i {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
