@@ -16,7 +16,7 @@
   /* Typography */
   li,
   a,
-  button {
+  button  {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -27,7 +27,7 @@
     color: #3c3b42;
   }
   
-  button {
+  button  {
     padding: 9px 20px;
     background-color: rgba(35, 11, 170, 0.788);
     border: none;
@@ -54,6 +54,7 @@
     top: 0;
     background-color: #ffffff;
     box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.62);
+    z-index: 1;
     
   }
   
@@ -334,49 +335,6 @@
 
 
   /* projects*/
-  #container-projects {
-    color: rgb(46, 46, 46);
-    
-  }
-  .projects-h {
-    text-align:center ;
-    margin: 15px;
-  }
-  
-  .project-cards {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next line */
-    justify-content: space-between; /* Distribute space evenly between cards */
-    margin: 0 15px; /* To account for margin of individual cards */
-    
-  }
-  
-  .project-card {
-    
-    width: calc(33.33% - 30px); /* Each card takes 33.33% width with margin */
-    margin: 20px 15px;
-    border-radius: 15px;
-    box-sizing: border-box; /* Include borders in width calculation */
-    background-color:rgba(88, 88, 88, 0.87);
-    box-shadow: 10px 10px 17px -3px rgba(0, 0, 0, 0.62);
-  }
-  
-  #project-img {
-    max-width: 100%;
-    border-radius: 15px 15px 0 0;
-  }
-  
-  #project-btn {
-    width: 100%;
-    border-radius: 0 0 15px 15px;
-  }
-  
-  /* Media Query for smaller screens */
-  @media (max-width: 768px) {
-    .project-card {
-      width: calc(50% - 30px); /* Each card takes 50% width with margin */
-    }
-  }
   
 
   /*Skills*/
@@ -401,5 +359,157 @@
     text-align: center;
     border-radius: 5px;
     /* use this: <span class="badge">New</span> */ 
+  }
+  .badge-html {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .badge-css {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .badge-javascript {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .badge-python {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .badge-sql {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .badge-bootstrap {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+
+
+
+  /* test*/
+  .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+
+
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: space-between; /* Distribute space evenly between cards */
+    margin: 25px; /* To account for margin of individual cards */
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 7px 7px 20px 0 rgb(75, 75, 75);
+    border-radius: 15px;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(3, 90, 107) 100%);
+    color: white;
+    transform: rotateY(180deg);
+    
+  }
+  
+  /* Button styling */
+  .flip-card-back button {
+      width: 100%;
+      height: 50px;
+      border-radius: 0 0 15px 15px;
+      font-weight: bolder;
+      border: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: transparent;
+      transition: 0.3s, color 0.3s;
+  }
+  
+  .flip-card-back button:hover {
+      background-color: yellow;
+      color: black;
+  }
+  #project-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+   
+  }
+  #container-projects {
+    color: rgb(46, 46, 46);
+    margin: 0 40px;
+    
+  }
+
+  .projects-h {
+    text-align: center ;
+    margin: 15px;
+  }
+  
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Distribute space evenly between cards */
+    margin: 15px; /* To account for margin of individual cards */
+    
+  }
+  
+  
+  
+  
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .project-card {
+      width: calc(50% - 30px); /* Each card takes 50% width with margin */
+    }
   }
   
