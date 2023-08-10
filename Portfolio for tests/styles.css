@@ -129,12 +129,31 @@
     margin-left: 40px;
     margin-right: 40px;
     font-weight: bold;
-    background-color: #efeff0;
+    background-color: #ffffff;
     padding: 15px;
     color: #202020;
     border-radius: 17px;
     box-shadow: 10px 10px 17px -3px rgba(0, 0, 0, 0.62);
   }
+  .about-text:hover {
+    font-size: large;
+    max-width: 500px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: bold;
+    background-color: #1d1d1d;
+    padding: 15px;
+    color: #ffffff;
+    border-radius: 17px;
+    box-shadow: 10px 10px 17px -3px rgba(34, 34, 34, 0.62);
+  }
+  #typewriter-text {
+    font-size: 24px;
+   
+    
+    
+  }
+
   
   /* Projects */
   .lines-projects,
@@ -492,6 +511,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(3
   .projects-h {
     text-align: center ;
     margin: 15px;
+    padding-top: 80px;
   }
   
   .project-cards {
