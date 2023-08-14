@@ -8,7 +8,7 @@
   }
   
   body {
-    background-color: #ffffff;
+    background-color: #F5F5F5;
     color: rgb(175, 168, 168);
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -55,7 +55,6 @@
     background-color: #ffffff;
     box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.62);
     z-index: 1;
-    
   }
   
   .logo {
@@ -129,9 +128,9 @@
     margin-left: 40px;
     margin-right: 40px;
     font-weight: bold;
-    background-color: #ffffff;
+    background-color: #202020;
     padding: 15px;
-    color: #202020;
+    color: #ffffff;
     border-radius: 17px;
     box-shadow: 10px 10px 17px -3px rgba(0, 0, 0, 0.62);
   }
@@ -141,21 +140,15 @@
     margin-left: 40px;
     margin-right: 40px;
     font-weight: bold;
-    background-color: #1d1d1d;
     padding: 15px;
-    color: #ffffff;
     border-radius: 17px;
-    box-shadow: 10px 10px 17px -3px rgba(34, 34, 34, 0.62);
+    box-shadow: 10px 10px 17px -3px rgba(0, 0, 0, 0.62);
   }
   #typewriter-text {
-    font-size: 24px;
-   
-    
-    
+    font-size: 24px; 
   }
-
   
-  /* Projects */
+  /* */
   .lines-projects,
   .lines-skills,
   .lines-contact {
@@ -165,18 +158,38 @@
     box-shadow: 10px 10px 17px -3px rgba(0, 0, 0, 0.62);
   }
   
-  /* Skills and Contact sections */
-  #container-skills, #container-contact
-  {
-    background-color: #2d2655;
-    height: 50vh;
+  /* Skills section */
+  #container-skills{
+    background-color: #F5F5F5;
+    
+  }
+
+  #container-skills{
+    color: #202020;
+  }
+  .skills-images {
+    padding: 20px ;
+    display: inline-block;
+    
+  }
+  .skill-image {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 5px;
+  }
+  .skills-svg {
+    max-width: 60px;
+    
+
+  }
+  #skills{
+    text-align: center;
+    font-family:Verdana, Tahoma, sans-serif;
   }
   
-  .contact-p {
-    text-align: right;
-    padding: 20px;
-  }
   
+
   /* Responsive design */
   @media (max-width: 768px) {
     #header-container ul {
@@ -200,16 +213,14 @@
         display: none;
     }
   }
-/*     */
-
-
+/*   Drop down menu  */
   #dropdown-menu {
     list-style: none;
     position:absolute;
     top: 100%; /* Position below the burger icon */
     left: 0;
     background-color: #ffffff;
-    border-radius: 5px;
+    
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     display: none;
     text-align: center;
@@ -255,13 +266,15 @@
     padding: 10px;
     
   }
+  .contact-p {
+    text-align: right;
+    padding: 20px;
+  }
   #email-section {
     background-color: #ffffff;
     padding: 10px;
     align-items: center;
     color:#202020;
-    
-    
   }
 
   @media screen and (max-width: 600px) {
@@ -351,16 +364,6 @@
     font-size: 20px;
   }
   
-
-
-  /* projects*/
-  
-
-  /*Skills*/
-#container-skills {
-  height: 550px;
-}
-
   /* Resume */
   #container-resume {
     height: 550px;
@@ -368,9 +371,8 @@
 
 
 
-
-  /*For badges */
-
+  
+    /*For badges */
   .badge {
     background-color: red;
     color: white;
@@ -380,62 +382,71 @@
     /* use this: <span class="badge">New</span> */ 
   }
   .badge-html {
-    background-color: red;
+    background-color: rgb(255, 153, 0);
     color: white;
     padding: 4px 8px;
     text-align: center;
     border-radius: 5px;
   }
   .badge-css {
-    background-color: red;
+    background-color: rgb(0, 17, 255);
     color: white;
     padding: 4px 8px;
     text-align: center;
     border-radius: 5px;
   }
   .badge-javascript {
-    background-color: red;
+    background-color: rgb(255, 238, 0);
     color: white;
     padding: 4px 8px;
     text-align: center;
     border-radius: 5px;
   }
   .badge-python {
-    background-color: red;
+    background-color: rgb(123, 255, 0);
     color: white;
     padding: 4px 8px;
     text-align: center;
     border-radius: 5px;
   }
   .badge-sql {
-    background-color: red;
+    background-color: #00758f;
     color: white;
     padding: 4px 8px;
     text-align: center;
     border-radius: 5px;
   }
   .badge-bootstrap {
-    background-color: red;
+    background-color: rgb(236, 0, 205);
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .badge-y {
+    background-color: blue;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .badge-f {
+    background-color: #740283;
     color: white;
     padding: 4px 8px;
     text-align: center;
     border-radius: 5px;
   }
 
-
-
-
-  /* test*/
+  /* flip cards */
   .flip-card {
     background-color: transparent;
     width: 250px;
     height: 250px;
     perspective: 1000px;
-
-
     display: flex;
     flex-wrap: wrap; /* Allow cards to wrap to the next line */
-    justify-content: space-between; /* Distribute space evenly between cards */
+    justify-content: space-between; /*Distribute space evenly between card*/
     margin: 25px; /* To account for margin of individual cards */
     
   }
@@ -470,42 +481,52 @@
   }
   
   .flip-card-back {
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(3, 90, 107) 100%);
-    color: white;
+    background-color:#222222;
+    color: rgb(165, 165, 165);
     transform: rotateY(180deg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     
   }
-  
+  .flip-card-back h2 {
+    margin: 10px;
+    color:#b9b9b9;
+    text-decoration: underline;
+  }
+
+  .cardp {
+    color:rgb(156, 173, 0);
+    padding: 10px;
+  }
   /* Button styling */
-  .flip-card-back button {
-      width: 100%;
-      height: 50px;
-      border-radius: 0 0 15px 15px;
-      font-weight: bolder;
-      border: none;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: transparent;
-      transition: 0.3s, color 0.3s;
+.flip-card-back button {
+  width: 100%;
+  height: 50px;
+  border-radius: 0 0 15px 15px;
+  font-weight: bolder;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: 0.3s, color 0.3s;
   }
   
   .flip-card-back button:hover {
-      background-color: yellow;
-      color: black;
+    background-color: #740283;
+    color: white;
   }
+  /* project */
+
   #project-img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 15px;
-   
   }
+
   #container-projects {
     color: rgb(46, 46, 46);
     margin: 0 40px;
-    
   }
 
   .projects-h {
@@ -519,13 +540,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(3
     flex-wrap: wrap; /* Allow cards to wrap to the next line */
     justify-content: center; /* Distribute space evenly between cards */
     margin: 15px; /* To account for margin of individual cards */
-    
   }
-  
-  
-  
-  
-  
+
   /* Media Query for smaller screens */
   @media (max-width: 768px) {
     .project-card {
