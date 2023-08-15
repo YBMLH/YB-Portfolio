@@ -170,6 +170,9 @@
   .skills-images {
     padding: 20px ;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: auto!important;
     
   }
   .skill-image {
@@ -177,6 +180,8 @@
     text-align: center;
     font-weight: bold;
     margin: 0 5px;
+    align-items: center;
+    justify-content: center;
   }
   .skills-svg {
     max-width: 60px;
@@ -217,19 +222,18 @@
   #dropdown-menu {
     list-style: none;
     position:absolute;
-    top: 100%; /* Position below the burger icon */
+    top: 100%;
     left: 0;
     background-color: #ffffff;
-    
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     display: none;
     text-align: center;
     width: 100%;
   }
   
-  #dropdown-menu.active {
-    display: block; /* Show the dropdown when active class is added */
-  }
+#dropdown-menu.active {
+  display: block; /* Show the dropdown when active */
+}
   
   #dropdown-menu li {
     padding: 10px 5px;
@@ -288,6 +292,9 @@
     background-color:#9e9b9b;
     color:#202020;
     
+  }
+  #container-resume {
+    height: 550px;
   }
   /*for the email form */
   .con-h {
@@ -363,78 +370,79 @@
   form {
     font-size: 20px;
   }
-  
-  /* Resume */
-  #container-resume {
-    height: 550px;
-  }
 
-
-
-  
     /*For badges */
   .badge {
-    background-color: red;
+    background-color: #ff0000;
     color: white;
+    display: inline-block;
+    margin: 4px 1px; /* Adjust this value to control the vertical spacing */
     padding: 4px 8px;
-    text-align: center;
     border-radius: 5px;
     /* use this: <span class="badge">New</span> */ 
   }
   .badge-html {
     background-color: rgb(255, 153, 0);
     color: white;
+    display: inline-block;
+    margin: 4px 1px; /* Adjust this value to control the vertical spacing */
     padding: 4px 8px;
-    text-align: center;
     border-radius: 5px;
   }
   .badge-css {
     background-color: rgb(0, 17, 255);
     color: white;
+    display: inline-block;
+    margin: 4px 1px; /* Adjust this value to control the vertical spacing */
     padding: 4px 8px;
-    text-align: center;
     border-radius: 5px;
   }
   .badge-javascript {
     background-color: rgb(255, 238, 0);
     color: white;
+    display: inline-block;
+    margin: 4px 1px; /* Adjust this value to control the vertical spacing */
     padding: 4px 8px;
-    text-align: center;
     border-radius: 5px;
   }
   .badge-python {
     background-color: rgb(123, 255, 0);
     color: white;
+    display: inline-block;
+    margin: 4px 1px; /* Adjust this value to control the vertical spacing */
     padding: 4px 8px;
-    text-align: center;
     border-radius: 5px;
   }
   .badge-sql {
     background-color: #00758f;
     color: white;
+    display: inline-block;
+    margin: 4px 1px; /* Adjust this value to control the vertical spacing */
     padding: 4px 8px;
-    text-align: center;
     border-radius: 5px;
   }
   .badge-bootstrap {
     background-color: rgb(236, 0, 205);
     color: white;
+    display: inline-block;
+    margin: 4px 1px; /* Adjust this value to control the vertical spacing */
     padding: 4px 8px;
-    text-align: center;
     border-radius: 5px;
   }
   .badge-y {
     background-color: blue;
     color: white;
+    display: inline-block;
+    margin: 4px 1px; /* Adjust this value to control the vertical spacing */
     padding: 4px 8px;
-    text-align: center;
     border-radius: 5px;
   }
   .badge-f {
     background-color: #740283;
     color: white;
+    display: inline-block;
+    margin: 4px 1px; /* Adjust this value to control the vertical spacing */
     padding: 4px 8px;
-    text-align: center;
     border-radius: 5px;
   }
 
@@ -492,12 +500,14 @@
     color:#b9b9b9;
     text-decoration: underline;
   }
-
   .cardp {
-    color:rgb(156, 173, 0);
-    padding: 10px;
+    padding: 0 5px;
   }
-  /* Button styling */
+  .cardt {
+    color:rgb(156, 173, 0);
+    padding: 5px;
+  }
+  /* Button flip card styling */
 .flip-card-back button {
   width: 100%;
   height: 50px;
@@ -509,12 +519,13 @@
   left: 0;
   right: 0;
   background-color: transparent;
-  transition: 0.3s, color 0.3s;
+  transition: 0.5s ease;
   }
   
   .flip-card-back button:hover {
-    background-color: #740283;
+    
     color: white;
+   background-color: #740283
   }
   /* project */
 
