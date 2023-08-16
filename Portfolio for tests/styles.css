@@ -399,7 +399,7 @@
   }
   .badge-javascript {
     background-color: rgb(255, 238, 0);
-    color: white;
+    color: rgb(43, 43, 43);
     display: inline-block;
     margin: 4px 1px; /* Adjust this value to control the vertical spacing */
     padding: 4px 8px;
@@ -560,3 +560,20 @@
     }
   }
   
+
+  /* styles.css */
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Smooth transition effect */
+}
