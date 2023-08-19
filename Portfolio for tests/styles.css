@@ -162,11 +162,24 @@
   
   /* Skills section */
   #container-skills {
-    background-color: #F5F5F5;
-    color: #202020;
+    background-color: #858585;
+    color: #555555;
     text-align: center; /* Center the content horizontally */
     padding-left: 70px;
     padding-right: 70px;
+  
+    display: flex;
+    justify-content: center;
+    
+    
+    
+
+}
+@media screen and (max-width: 600px) { /* Apply styles when screen width is 600px or less */
+  #container-skills {
+    
+    display: block; /* Stack items vertically */
+  }
 }
 
 .skills-images {
@@ -180,12 +193,63 @@
     text-align: center;
     font-weight: bold;
     margin: 10px; /* Adjust the spacing around each image */
+    
+   
 }
-
-.skills-svg {
+.lines-skills {
+  
+    background-color: lightgray;
+    margin: 5px;
+}
+.skill-image img {
   max-width: 59px;
     min-width: 40px;
+    border-radius: 50%;
+    border: none;
 }
+
+
+.skills-svg-html:hover {
+  box-shadow: 5px 5px 5px rgb(87, 87, 87);
+  background-color: rgb(255, 153, 0);
+  border: 5px solid rgb(255, 153, 0);
+}
+.skills-svg-js:hover {
+  box-shadow: 5px 5px 5px rgb(87, 87, 87);
+  background-color: yellow;
+  border: 5px solid yellow;
+}
+.skills-svg-css:hover {
+  box-shadow: 5px 5px 5px rgb(87, 87, 87);
+  background-color: rgb(0, 102, 255);
+  border: 5px solid rgb(0, 102, 255);
+}
+.skills-svg-sql:hover {
+  box-shadow: 5px 5px 5px rgb(87, 87, 87);
+  background-color: rgb(0, 174, 255);
+  border: 5px solid rgb(0, 162, 255);
+}
+.skills-svg-git:hover {
+  box-shadow: 5px 5px 5px rgb(87, 87, 87);
+  background-color: rgb(247, 0, 255);
+  border: 5px solid rgb(255, 0, 255);
+}
+.skills-svg-github:hover {
+  box-shadow: 5px 5px 5px rgb(87, 87, 87);
+  background-color: rgb(148, 0, 153);
+  border: 5px solid rgb(131, 0, 131);
+}
+.skills-svg-bootstrap:hover {
+  box-shadow: 5px 5px 5px rgb(87, 87, 87);
+  background-color: rgb(225, 0, 255);
+  border: 5px solid rgb(225, 0, 255);
+}
+.skills-svg-react:hover {
+  box-shadow: 5px 5px 5px rgb(87, 87, 87);
+  background-color: rgb(0, 217, 255);
+  border: 5px solid rgb(0, 238, 255);
+}
+
   
 
   /* Responsive design */
@@ -301,6 +365,7 @@
     list-style-type: none;
     font-weight: bolder;
     max-width: 300px;
+    padding-right: 50px;
     
   }
   
@@ -311,7 +376,7 @@
   }
   #resume_section_one, #resume_section_two, #resume_section_three {
     padding-left: 90px;
-    padding-top: 15px;
+    padding-top: 40px;
     padding-bottom: 15px;
     text-align: left;
     color:#000000;
@@ -362,7 +427,7 @@
   }
   .con-p {
     text-align: center;
-    padding: 10px ;
+    padding: 10px;
     font-size:large;
     font-family:Arial, Helvetica, sans-serif;
   }
