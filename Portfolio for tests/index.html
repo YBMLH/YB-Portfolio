@@ -20,7 +20,7 @@
             <ul class="nav-links" id="nav-links">
               <li><a href="#">Home</a></li>
               <li><a href="#container-projects">Projects</a></li>
-              <li><a href="#container-skills">Skills</a></li>
+              <li><a href="#skillhead">Skills</a></li>
               <li><a href="#container-resume">Resume</a></li>
             </ul>
           
@@ -31,7 +31,7 @@
             <ul class="dropdown" id="dropdown-menu">
               <li><a href="#">Home</a></li>
               <li><a href="#container-projects">Projects</a></li>
-              <li><a href="#container-skills">Skills</a></li>
+              <li><a href="#skillhead">Skills</a></li>
               <li><a href="#container-resume">Resume</a></li>
               <li><a href="#container-contact">Contact</a></li>
             </ul>
@@ -110,6 +110,44 @@
               </div>
             </div>
 
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img id="project-img" src="" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h2>JavaScript Counter</h2> 
+                  <p class="cardp">A single Page site that uses JS to create a counter App</p> 
+                  <p class="cardt">Tech-Stack:</p>
+                  <p class="badge-p">
+                    <span class="badge-html">HTML</span>
+                    <span class="badge-css">CSS</span>
+                    <span class="badge-javascript">JavaScript</span>
+                  </p>
+                  <button onclick="window.open('https://codepen.io/YBMLH/pen/VwqZXKx', '_blank')">View Code /></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img id="project-img" src="" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h2>JavaScript Counter</h2> 
+                  <p class="cardp">A single Page site that uses JS to create a counter App</p> 
+                  <p class="cardt">Tech-Stack:</p>
+                  <p class="badge-p">
+                    <span class="badge-html">HTML</span>
+                    <span class="badge-css">CSS</span>
+                    <span class="badge-javascript">JavaScript</span>
+                  </p>
+                  <button onclick="window.open('https://codepen.io/YBMLH/pen/VwqZXKx', '_blank')">View Code /></button>
+                </div>
+              </div>
+            </div>
 
             <div class="flip-card">
               <div class="flip-card-inner">
@@ -209,70 +247,105 @@
         </div>
 
         
+
+        <div id="skillhead" class="skill-heading">
+          <h2>
+            Skills
+        </h2>
+      </div>
+
+
         <div id="container-skills">
             <!-- skills secton   -->
             
+
+
+
           <div class="lines-skills">
-          <h3 id="skills">My Skills</h3>
-       
-          
+          <h3 id="skills">Code Alchemists</h3>
           <div class="skills-images">
-
             <div class="skill-image">
-              <img class="skills-svg-html" src="images/skill-images/html.png"/>
-              <p class="skill-tag"></p>
-            </div>
-
-            <div class="skill-image">
-              <img class="skills-svg-css" src="images/skill-images/css.png"/>
-              <p class="skill-tag"></p>
-            </div>
-
-            <div class="skill-image">
+              
+              <div class="tooltip">
               <img class="skills-svg-js" src="images/skill-images/js 1.png"/>
+              <span class="tooltiptext">JavaScript</span>
+              </div>
               <p class="skill-tag"></p>
             </div>
 
-            <div class="skill-image">
-              <img class="skills-svg-git" src="images/skill-images/git.png"/>
-              <p class="skill-tag"></p>
+            <div class="skill-image"> 
+              <div class="tooltip">   
+              <img class="skills-svg-python" src="images/skill-images/python.png"/>
+              <span class="tooltiptext">Python</span>
+              </div>
             </div>
-
-            <div class="skill-image">
-              <img class="skills-svg-github" src="images/skill-images/github.png"/>
-              <p class="skill-tag"></p>
-            </div>
-
-            <div class="skill-image">
-              <img class="skills-svg-sql" src="images/skill-images/sql.png"/>
-              <p class="skill-tag"></p>
-            </div>
-
-            <div class="skill-image">
-              <img class="skills-svg-bootstrap" src="images/skill-images/bootstrap.png"/>
-              <p class="skill-tag"></p>
-            </div>
-
-            <div class="skill-image">
-              <img class="skills-svg-react" src="images/skill-images/react.png"/>
-              <p class="skill-tag"></p>
-            </div>
-            
-
-            
           </div>
-          
           </div>
-          
-          <div class="lines-skills">your mom
+    
 
+          <div class="lines-skills">
+            <h3>Digital Designers</h3>
             <div class="skills-images">
-
               <div class="skill-image">
+                <div class="tooltip">
                 <img class="skills-svg-html" src="images/skill-images/html.png"/>
+                <span class="tooltiptext">HTML</span>
+                </div>
+              </div>
+  
+              <div class="skill-image">
+                <div class="tooltip">
+                <img class="skills-svg-css" src="images/skill-images/css.png"/>
+                <span class="tooltiptext">CSS</span>
+                </div>
+              </div>
+             </div>  
+          </div>
+
+          <div class="lines-skills">
+            <h3 id="skills">data Bases</h3>
+            <div class="skills-images">
+              <div class="skill-image">
+                <img class="skills-svg-js" src="images/skill-images"/>
                 <p class="skill-tag"></p>
               </div>
-              </div>  
+  
+              <div class="skill-image">
+                <img class="skills-svg-sql" src="images/skill-images/sql.png"/>
+                <p class="skill-tag"></p>
+              </div>
+            </div>
+            </div>
+
+          <div class="lines-skills">
+            <h3>Frameworks/ Libraries</h3> 
+            <div class="skills-images">
+              <div class="skill-image">
+                <img class="skills-svg-bootstrap" src="images/skill-images/bootstrap.png"/>
+                <p class="skill-tag"></p>
+              </div>
+  
+              <div class="skill-image">
+                <img class="skills-svg-react" src="images/skill-images/react.png"/>
+                <p class="skill-tag"></p>
+              </div>
+             </div>  
+          </div>
+
+
+          <div class="lines-skills">
+            <h3>Version Control Tool</h3>
+            <div class="skills-images">
+            <div class="skill-image">
+            <img class="skills-svg-git" src="images/skill-images/git.png"/>
+            <p class="skill-tag"></p>
+            </div>
+
+            <div class="skill-image">
+            <img class="skills-svg-github" src="images/skill-images/github.png"/>
+            <p class="skill-tag"></p>
+            </div>
+            </div>
           </div>
         </div>
 
@@ -283,7 +356,7 @@
         
       <h2>My Resume</h2>
 <div class="row">
-      <div class="column">
+      <div id="secone" class="column">
         <div>
           <img class ="resume-img" src="images/photo_2022-05-21_22-10-24 (2).jpg">
           <h3 class="myname">Yasser Boumalha</h3>
@@ -315,7 +388,7 @@
 
       </div>
 
-      <div class="column">
+      <div id="sectwo" class="column">
 
       <div id="resume_section_one">
         <h4 id="resume_h">Summary:</h4>
